@@ -38,4 +38,4 @@ clone() {
   done
 }
 
-clone doc com srv hpc css mod
+clone com srv hpc css mod doc
