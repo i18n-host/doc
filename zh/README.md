@@ -40,4 +40,11 @@ bash <(curl -sS https://raw.githubusercontent.com/i18n-host/doc/refs/heads/dev/i
 
 `lib` 目录下是一些与网页无关的工具库，比如网络请求、防抖、时间等等。
 
+## 网页组件
+
+可以用`:global(_)`这个选择器，选择组件本身
+
+
+
+
 
