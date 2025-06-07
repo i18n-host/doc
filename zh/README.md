@@ -31,6 +31,8 @@ bash <(curl -sS https://raw.githubusercontent.com/i18n-host/doc/refs/heads/dev/i
 
 ## dom组件
 
+`sh/dom.js` 会自动给生成的`js`注入`styl`样式（网页组件如用`S`定义，不会自动注入）
+
 `Err.js` 表单报错
 `Focus.js` 自动设置焦点
 
