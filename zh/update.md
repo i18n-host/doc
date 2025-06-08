@@ -6,3 +6,6 @@
 2. beta
 3. stable
 
+更新的内容
+
+版本号 hash 签名
