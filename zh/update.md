@@ -1,5 +1,9 @@
 # 自动更新系统设计
 
+~/.config/xxx/update.yml
+
+channel = xxx
+
 更新频道
 
 1. nightly
