@@ -15,7 +15,11 @@ channel = xxx
 
 拼接 网站/项目名/版本号/平台.tar
 
-github.com 对 release 特殊处理
+g:组织名/项目名
+n:项目名
+域名路径
+
+
 cloudflare r2
 
 更新的内容
