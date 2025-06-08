@@ -22,5 +22,10 @@ curl -s 'https://dns.google/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
 
 curl -s 'https://dns.alidns.com/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
 
+curl -H 'Accept: application/dns-json' -s 'https://cloudflare-dns.com/dns-query?name=i18-nightly.u-01.eu.org&type=TXT' | jq
+
+curl -H 'Accept: application/dns-json' -s 'https://doh.opendns.com/dns-query?name=i18-nightly.u-01.eu.org&type=TXT' | jq
+
+curl -H 'Accept: application/dns-json' -s 'https://doh.sb/dns-query?name=i18-nightly.u-01.eu.org&type=TXT'  -L|jq
 
 版本号 hash 签名
