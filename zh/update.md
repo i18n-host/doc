@@ -14,6 +14,13 @@ channel = xxx
 
 i18-nightly.u-01.eu.org 的 txt记录
 
-curl -s -H 'accept:application/dns-json' 'https://doh.pub/dns-query?name=i18-nightly.u-01.eu.org&type=TXT' | jq .
+curl -s 'https://doh.360.cn/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
+
+curl -s 'https://doh.pub/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
+
+curl -s 'https://dns.google/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
+
+curl -s 'https://dns.alidns.com/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
+
 
 版本号 hash 签名
