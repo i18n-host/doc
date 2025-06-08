@@ -10,6 +10,14 @@ channel = xxx
 2. beta
 3. stable
 
+
+版本号 网址 网站
+
+拼接 网站/项目名/版本号/平台.tar
+
+github.com 对 release 特殊处理
+cloudflare r2
+
 更新的内容
 
 i18-nightly.u-01.eu.org 的 txt记录
