@@ -12,6 +12,8 @@ channel = xxx
 
 更新的内容
 
-i18.u-01.eu.org 的 txt记录
+i18-nightly.u-01.eu.org 的 txt记录
+
+curl -s -H 'accept:application/dns-json' 'https://doh.pub/dns-query?name=i18-nightly.u-01.eu.org&type=TXT' | jq .
 
 版本号 hash 签名
