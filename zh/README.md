@@ -4,7 +4,7 @@
 bash <(curl -sS https://raw.githubusercontent.com/i18n-host/doc/refs/heads/dev/init.sh)
 ```
 
-# 前端
+## 前端
 
 [i18n-host/css](https://github.com/i18n-host/css) 基础样式，手动全局引用
 
@@ -29,22 +29,25 @@ bash <(curl -sS https://raw.githubusercontent.com/i18n-host/doc/refs/heads/dev/i
 
 而组件的`js`中的`css`字符串，会在发布时摇树优化掉。
 
-## dom组件
+### dom组件
 
 `sh/dom.js` 会自动给生成的`js`注入`styl`样式（网页组件如用`S`定义，不会自动注入）
 
 `Err.js` 表单报错
 `Focus.js` 自动设置焦点
 
-## 工具库
+### 工具库
 
 `lib` 目录下是一些与网页无关的工具库，比如网络请求、防抖、时间等等。
 
-## 网页组件
+### 网页组件
 
 可以用`:global(_)`这个选择器，选择组件本身
 
 
+## 后端
 
+调试翻译服务可以用 tailscale
+http://100.103.68.96/
 
 
