@@ -12,4 +12,6 @@ channel = xxx
 
 更新的内容
 
+i18.u-01.eu.org 的 txt记录
+
 版本号 hash 签名
