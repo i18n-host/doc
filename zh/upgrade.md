@@ -23,6 +23,8 @@ channel = xxx
 
 `版本号 网址1 网址2`
 
+版本号编码： vbyte 编码后再用 base64url 编码。
+
 
 `https://d.u-01.eu.org/i18/0.2.1/aarch64-apple-darwin.tar`
 
