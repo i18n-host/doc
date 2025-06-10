@@ -1,5 +1,7 @@
 # 自动更新系统设计
 
+## 客户端
+
 ~/.config/xxx/update.yml
 
 channel = xxx
@@ -11,7 +13,16 @@ channel = xxx
 3. stable
 
 
-版本号 网址 网站
+## 服务器
+
+通过域名的 txt 记录分发的最新版本
+
+域名前缀为 项目名 - 版本号。
+
+比如 `i18-nightly.u-01.eu.org` 的 TXT 记录，格式为
+
+`版本号 网址 网站`
+
 
 拼接 网站/项目名/版本号/平台.tar
 
@@ -24,8 +35,8 @@ cloudflare r2
 
 更新的内容
 
-i18-nightly.u-01.eu.org 的 txt记录
 
+```
 curl -s 'https://doh.360.cn/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
 
 curl -s 'https://doh.pub/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
@@ -39,6 +50,7 @@ curl -H 'Accept: application/dns-json' -s 'https://cloudflare-dns.com/dns-query?
 curl -H 'Accept: application/dns-json' -s 'https://doh.opendns.com/dns-query?name=i18-nightly.u-01.eu.org&type=TXT' | jq
 
 curl -H 'Accept: application/dns-json' -s 'https://doh.sb/dns-query?name=i18-nightly.u-01.eu.org&type=TXT'  -L|jq
+```
 
 返回响应Answer中type为16的值
 
