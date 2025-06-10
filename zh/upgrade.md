@@ -35,12 +35,9 @@ channel = xxx
 
 `https://github.com/up51/v/releases/download/i18/0.2.1/aarch64-apple-darwin.tar`
 
+有比如 `d|f.u-01.eu.org` 表示 `d.u-01.eu.org` 和 `f.u-01.eu.org` 这两个域名都可以下载。
 
-
-cloudflare r2
-
-更新的内容
-
+通过 `DOH` 解析域名的 `TXT` 记录 （类似下面）。
 
 ```
 curl -s 'https://doh.360.cn/resolve?name=i18-nightly.u-01.eu.org&type=TXT' | jq
@@ -58,8 +55,10 @@ curl -H 'Accept: application/dns-json' -s 'https://doh.opendns.com/dns-query?nam
 curl -H 'Accept: application/dns-json' -s 'https://doh.sb/dns-query?name=i18-nightly.u-01.eu.org&type=TXT'  -L|jq
 ```
 
-返回响应Answer中type为16的值
+抽取返回响应`Answer`中`type`为`16`的值
 
-版本号 hash 签名
+`tar` 包中，`tar.zst` 为内容，`sign` 为签名。
 
-ed25519_dalek
+`sign` 的签名算法为 `sha3-512` + `ed25519-ph` 。
+
+
