@@ -25,9 +25,15 @@ channel = xxx
 
 版本号编码： vbyte 编码后再用 base64url 编码。
 
+网址只需要域名，会自动生成路径后缀:
 
 `https://d.u-01.eu.org/i18/0.2.1/aarch64-apple-darwin.tar`
 
+因为TXT记录字符数限制为255个，所以采用一些压缩的写法。
+
+比如 `Gup51/v` ， 首个大写字母`G`表示这是`github release`，其路径为
+
+`https://github.com/up51/v/releases/download/i18/0.2.1/aarch64-apple-darwin.tar`
 
 
 
