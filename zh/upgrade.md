@@ -21,14 +21,12 @@ channel = xxx
 
 比如 `i18-nightly.u-01.eu.org` 的 TXT 记录，格式为
 
-`版本号 网址 网站`
+`版本号 网址1 网址2`
 
 
-拼接 网站/项目名/版本号/平台.tar
+`https://d.u-01.eu.org/i18/0.2.1/aarch64-apple-darwin.tar`
 
-g:组织名/项目名
-n:项目名
-域名路径
+
 
 
 cloudflare r2
